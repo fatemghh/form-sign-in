@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        padding: 0 10px;
+    }
+    html::before {
+        content: "";
+        position: absolute;
+        width:205vh;
+        height: 100vh;
+        background: url("pic7.jpg"), #000000;
+
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    .continer{
+        width: 400px;
+        height: 450px;
+        border-radius: 8px;
+        border-color: white; 
+        padding: 50px;
+        border: 1px solid rgb(255, 255, 255);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+    .h2{
+        text-shadow: 0px 0px 10px #ffffff,
+        0px 0px 10px #f3f88d,
+        0px 0px 10px #fcfa67,0px 0px 10px #ffffff;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        
+        text-align: center;
+        color: #2c2d2d;
+    }
+    .input {
+        direction: ltr; 
+        text-align: left; 
+        position: relative;
+        border-bottom: 2px solid #ccc;
+        margin: 15px 0;
+    }
+    .input label {
+        direction: ltr;
+        text-align: left; 
+        position: absolute;
+        top: 50%;
+        left: 5px; 
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 16px;
+        pointer-events: none; 
+        transition: 0.15s ease;
+    }
+    .input:focus label,
+    .input:not(:placeholder-shown) label {
+        top: 0; 
+        font-size: 14px; 
+        color: rgb(0, 0, 0);
+        text-shadow:  2px 1px 10px rgb(255, 255, 255);
+    }
+
+    .input input {
+        text-align: left; 
+        direction: ltr; 
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #fff;
+    }
+    .input:active,
+    .input:focus,
+    
+    .input:hover {
+    outline: none;
+    
+    border-bottom-color: #fcfa67;
+    }   
+    
+    .submit{
+        border: 2px solid rgba(255, 255, 255, 0.5); 
+        background-color: rgba(255, 255, 255, 0.2);
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 26px; 
+        border: 10px solid transparent; 
+        text-transform: uppercase;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 10%;
+        color: #000000;
+        cursor: pointer;
+        transition: .2s;
+        position: absolute;
+        top: 80%;
+        left: 38%;
+        transform: translate(-28%, -30%);
+        color: #000000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    }
+   .submit:hover{
+    display: flex;
+
+    filter: drop-shadow(0 0 10px #fefe00);
+
+    }
+
+
+
+
